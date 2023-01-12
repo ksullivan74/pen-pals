@@ -1,4 +1,4 @@
-import { getAuthors, setAuthor } from "./dataAccess.js";
+import { getAuthors } from "./dataAccess.js";
 
 export const authorList = () => {
     const authors = getAuthors()

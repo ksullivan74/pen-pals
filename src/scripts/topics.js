@@ -1,4 +1,4 @@
-import { getTopics, setTopic } from "./dataAccess.js";
+import { getTopics } from "./dataAccess.js";
 
 export const topicsList = () => {
     const topics = getTopics()

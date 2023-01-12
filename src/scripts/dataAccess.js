@@ -76,20 +76,20 @@ export const sendLetter = (letter) => {
 // LETTER BUILDER
 
 // sets the temporary state for the author chosen
-export const setAuthor = (id) => {
-     const authorId = id
-     return authorId
-}
+// export const setAuthor = (id) => {
+//      const authorId = id
+//      return authorId
+// }
 
-export const setRecipient = (id) => {
-    const recipientId = id
-    return recipientId
-}
+// export const setRecipient = (id) => {
+//     const recipientId = id
+//     return recipientId
+// }
 
-export const setTopic = (id) => {
-    const topicId = id
-    return topicId
-}
+// export const setTopic = (id) => {
+//     const topicId = id
+//     return topicId
+// }
 
 // export const addLetter = () => {
 //     // Copy the current state of user choices

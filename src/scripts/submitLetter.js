@@ -1,4 +1,4 @@
-import { sendLetter, setAuthor, setRecipient, setTopic } from "./dataAccess.js"
+import { sendLetter } from "./dataAccess.js"
 
 
 export const submitButton = () => {
@@ -13,12 +13,14 @@ document.addEventListener("click", clickEvent => {
         const userRecipientId = document.querySelector("select[name='recipient']").value
         const userTopicId = document.querySelector("input[name='topic']:checked").id
         const letterContent = document.querySelector("textarea[name='letterContent']").value
+        const dateSent = Date.now()
 
         const letter = {
             authorId: userAuthorId,
             recipientId: userRecipientId,
             topicId: userTopicId,
-            topicBody: letterContent
+            topicBody: letterContent,
+            dateStamp: dateSent
         }
 
         sendLetter(letter)

@@ -1,4 +1,4 @@
-import { getAuthors, setRecipient } from "./dataAccess.js";
+import { getAuthors } from "./dataAccess.js";
 
 export const recipientList = () => {
     const recipient = getAuthors()

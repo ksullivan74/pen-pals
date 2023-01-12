@@ -33,26 +33,12 @@
   ],
   "letters": [
     {
-      "id": 0,
-      "topicBody": "",
-      "dateSent": 1673392596256,
-      "authorId": "",
-      "recipientId": "",
-      "topicId": ""
-    },
-    {
       "authorId": "1",
-      "recipientId": "2",
+      "recipientId": "1",
       "topicId": "2",
-      "topicBody": "    sdfasd",
+      "topicBody": "       Loved the book! It was very scary!",
+      "dateStamp": 1673557193361,
       "id": 1
-    },
-    {
-      "authorId": "1",
-      "recipientId": "2",
-      "topicId": "2",
-      "topicBody": "    Hi There,\nLoved your last book. It was very scary!",
-      "id": 2
     }
   ]
 }
