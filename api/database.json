@@ -1,0 +1,58 @@
+{
+  "authors": [
+    {
+      "id": 1,
+      "name": "Mark Twain"
+    },
+    {
+      "id": 2,
+      "name": "Stephen King"
+    },
+    {
+      "id": 3,
+      "name": "George Orwell"
+    }
+  ],
+  "topics": [
+    {
+      "id": 1,
+      "topic": "Congratulations"
+    },
+    {
+      "id": 2,
+      "topic": "Friendly"
+    },
+    {
+      "id": 3,
+      "topic": "Business"
+    },
+    {
+      "id": 4,
+      "topic": "Writer's Block"
+    }
+  ],
+  "letters": [
+    {
+      "id": 0,
+      "topicBody": "",
+      "dateSent": 1673392596256,
+      "authorId": "",
+      "recipientId": "",
+      "topicId": ""
+    },
+    {
+      "authorId": "1",
+      "recipientId": "2",
+      "topicId": "2",
+      "topicBody": "    sdfasd",
+      "id": 1
+    },
+    {
+      "authorId": "1",
+      "recipientId": "2",
+      "topicId": "2",
+      "topicBody": "    Hi There,\nLoved your last book. It was very scary!",
+      "id": 2
+    }
+  ]
+}
