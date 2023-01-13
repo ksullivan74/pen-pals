@@ -30,6 +30,7 @@ const letterBuilder = (letter) => {
    return `<p>Dear,<br> 
             ${matchingRecipient.name}  (${matchingRecipient.email})<br><br>
             ${letter.topicBody}<br><br>
+            Tpoic = ${matchingTopic.topic}<br><br>
             Sincerely,${matchingAuthor.name} (${matchingAuthor.email})<br>
             Sent on ${letter.dateStamp}
             </P>`
@@ -41,7 +42,7 @@ export const letters = () => {
 
     let html = "<section>"
 
-    const submittedLetter = letter.map(letterBuilder)
+    const submittedLetter = letter.map(letterBuilder).join("")
 
     html += submittedLetter
     html += "</section>"
