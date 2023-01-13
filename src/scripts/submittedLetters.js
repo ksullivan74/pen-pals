@@ -25,12 +25,12 @@ const letterBuilder = (letter) => {
         }
     )
 
-    const dateString = letter.dateStamp.toLocaleDateString()
+    //const dateString = letter.dateStamp.toLocaleDateString()
 
    return `<p>Dear,<br> 
             ${matchingRecipient.name}  (${matchingRecipient.email})<br><br>
             ${letter.topicBody}<br><br>
-            Sincerely,${matchingRecipient.name} (${matchingRecipient.email})<br>
+            Sincerely,${matchingAuthor.name} (${matchingAuthor.email})<br>
             Sent on ${letter.dateStamp}
             </P>`
 
