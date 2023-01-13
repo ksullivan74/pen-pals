@@ -4,14 +4,6 @@ const applicationState = {
     letters: []
 }
 
-// const letterBuilder = {}
-// const letter = {
-//     id: 1,
-//     topicBody: "",
-//     dateSent: 1673392596256,
-//     authorId: "",
-//     recipientId: ""
-// }
 
 const API = "http://localhost:8088"
 
@@ -50,6 +42,20 @@ export const getAuthors = () => {
 
 // LETTERS
 
+export const fetchLetters = () => {
+    return fetch(`${API}/letters`)
+    .then (response => response.json())
+    .then(
+        (letters) => {
+            applicationState.letters = letters
+        }
+    )
+}
+
+export const getLetters = () => {
+    return applicationState.letters.map(letters => ({...letters}))
+}
+
 export const sendLetter = (letter) => {
     const fetchOptions = {
         method: "POST",
@@ -73,36 +79,3 @@ export const sendLetter = (letter) => {
     )
 }
 
-// LETTER BUILDER
-
-// sets the temporary state for the author chosen
-// export const setAuthor = (id) => {
-//      const authorId = id
-//      return authorId
-// }
-
-// export const setRecipient = (id) => {
-//     const recipientId = id
-//     return recipientId
-// }
-
-// export const setTopic = (id) => {
-//     const topicId = id
-//     return topicId
-// }
-
-// export const addLetter = () => {
-//     // Copy the current state of user choices
-//      const newLetter = {letterBuilder}
-//     // Add a new primary key to the object
-//      const lastIndex = letter.length -1
-//      newLetter.id = letter[lastIndex].id +1
-//     // Add a timestamp to the letter
-//     newLetter.timeStamp = Date.now()
-//     // Add the new letter object to custom orders state
-//     letter.push(newLetter)
-//     // Reset the temporary state for user choices
-//     letter = {}
-//     // Broadcast a notification that permanent state has changed
-//     document.dispatchEvent(new CustomEvent("stateChnaged"))
-// }

@@ -2,15 +2,18 @@
   "authors": [
     {
       "id": 1,
-      "name": "Mark Twain"
+      "name": "Mark Twain",
+      "email": "marktwain@gmail.com"
     },
     {
       "id": 2,
-      "name": "Stephen King"
+      "name": "Stephen King",
+      "email": "StephenKing@gmail.com"
     },
     {
       "id": 3,
-      "name": "George Orwell"
+      "name": "George Orwell",
+      "email": "george@gmail.com"
     }
   ],
   "topics": [
@@ -34,11 +37,19 @@
   "letters": [
     {
       "authorId": "1",
-      "recipientId": "1",
+      "recipientId": "2",
       "topicId": "2",
-      "topicBody": "       Loved the book! It was very scary!",
-      "dateStamp": 1673557193361,
+      "topicBody": "Dear Stephen,\nloved the new book, it was very scary!   ",
+      "dateStamp": "2023-01-13T17:33:13.088Z",
       "id": 1
+    },
+    {
+      "authorId": "1",
+      "recipientId": "2",
+      "topicId": "2",
+      "topicBody": "Dear Stephen,\nvery scary book!   ",
+      "dateStamp": "2023-01-13T17:37:31.249Z",
+      "id": 2
     }
   ]
 }

@@ -3,6 +3,7 @@ import { authorList } from "./authors.js"
 import { submitButton } from "./submitLetter.js"
 import { letterForm } from "./letter.js"
 import { recipientList } from "./recipients.js"
+import { letters } from "./submittedLetters.js"
 
 
 export const penPalSociety = () => {
@@ -28,11 +29,16 @@ export const penPalSociety = () => {
         <section>
         ${recipientList()}
         </section>
-
-    <h3>Submit</h3>
+        <br>
+    
         <section>
         ${submitButton()}
         </section>
+
+    <h3>Sent Letters</h3>
+        <section>
+        ${letters()}
+        </section>    
 
     `
 }
