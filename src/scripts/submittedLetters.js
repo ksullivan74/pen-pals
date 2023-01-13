@@ -30,8 +30,9 @@ const letterBuilder = (letter) => {
    return `<p>Dear,<br> 
             ${matchingRecipient.name}  (${matchingRecipient.email})<br><br>
             ${letter.topicBody}<br><br>
-            Tpoic = ${matchingTopic.topic}<br><br>
-            Sincerely,${matchingAuthor.name} (${matchingAuthor.email})<br>
+            Topic = ${matchingTopic.topic}<br><br>
+            Sincerely,<br>
+            ${matchingAuthor.name} (${matchingAuthor.email})<br>
             Sent on ${letter.dateStamp}
             </P>`
 
